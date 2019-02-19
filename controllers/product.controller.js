@@ -1,9 +1,25 @@
-const Product = require('../models/product');
+const Product = require('../models/product.model');
 
 // Simple version, without validation or sanitation
 exports.test = function (req, res) {
     res.send('Greetings from the Test controller!');
 };
+
+
+
+exports.all = (req, res) => {
+    Product.find({})
+    .then( (allProducts) => res.json(allProducts))
+}
+
+exports.find_one = (req, res) => {
+    Product.findOne({ name: req.params.name })
+    .then( (foundProduct) => res.json(foundProduct))
+}
+
+
+
+
 
 exports.product_create = function (req, res) {
     let product = new Product(
