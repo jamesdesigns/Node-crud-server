@@ -23,7 +23,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/products', product);
 
-let port = 5000;
+// let port = 5000;
+const port = (process.env.PORT || 5000);
 
 app.listen(port, () => {
     console.log('Server is up and running on port number ' + port);

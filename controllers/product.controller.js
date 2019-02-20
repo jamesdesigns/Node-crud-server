@@ -6,7 +6,6 @@ exports.test = function (req, res) {
 };
 
 
-
 exports.all = (req, res) => {
     Product.find({})
     .then( (allProducts) => res.json(allProducts))
@@ -16,9 +15,6 @@ exports.find_one = (req, res) => {
     Product.findOne({ name: req.params.name })
     .then( (foundProduct) => res.json(foundProduct))
 }
-
-
-
 
 
 exports.product_create = function (req, res) {
