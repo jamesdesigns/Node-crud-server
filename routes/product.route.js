@@ -9,8 +9,10 @@ router.get('/test', product_controller.test);
 
 // Define router for all 6 endpoints
 router.get('/:id', product_controller.product_details);
-router.get('/all', product_controller.all)
-router.get('/find/:name', product_controller.find_one);
+router.get('/', product_controller.all);
+router.get('/name/:name', product_controller.find_name);
+router.get('/size/:size', product_controller.find_size);
+
 router.post('/create', product_controller.product_create);
 router.put('/:id/update', product_controller.product_update);
 router.delete('/:id/delete', product_controller.product_delete);

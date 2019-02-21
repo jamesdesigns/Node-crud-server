@@ -5,25 +5,13 @@ exports.test = function (req, res) {
     res.send('Welcome to the SpaceX Retail Store!');
 };
 
-// View all products
-// exports.all = (req, res) => {
-//     Product.find({})
-//     .then( (allProducts) => res.json(allProducts))
-// }
-
+// Find all products
 exports.all = (req, res) => {
     Product.find()
     .then( (allProducts) => res.send(allProducts));
 }
 
-// controllers/products.controller.js
-// exports.product_details = function (req, res) {
-//     Product.findById(req.params.id, function (err, product) {
-//         if (err) return next(err);
-//         res.send(product);
-//     })
-// };
-
+// Find products by name
 exports.find_name = (req, res, next) => {
     const productName = req.params.name;
     Product.find({
@@ -34,11 +22,16 @@ exports.find_name = (req, res, next) => {
     })
 };
 
-// Find one product
-// exports.find_one = (req, res) => {
-//     Product.findOne({ name: req.params.name })
-//     .then( (foundProduct) => res.json(foundProduct))
-// }
+// Find products by size
+exports.find_size = (req, res, next) => {
+    const productSize = req.params.size;
+    Product.find({
+        size: productSize
+    })
+    .then(result => {
+        res.send(result)
+    })
+};
 
 // Create a product
 exports.product_create = function (req, res) {
@@ -48,7 +41,6 @@ exports.product_create = function (req, res) {
             price: req.body.price,
             color: req.body.color,
             size: req.body.size,
-            // imgUrl: req.body.imgUrl,
         }
     );
 
@@ -60,7 +52,7 @@ exports.product_create = function (req, res) {
     })
 };
 
-// Find product details
+// Read product details
 exports.product_details = function (req, res) {
     Product.findById(req.params.id, function (err, product) {
         if (err) return next(err);
