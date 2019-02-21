@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 // Imports routes for the product
 const product = require('./routes/product.route');
 
-// initialize our express app
+// Initialize our express app
 const app = express();
 
 // Set up mongoose connection
@@ -24,6 +24,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use('/products', product);
 
 // let port = 5000;
+// Fix port by adding the following code below
+
 const port = (process.env.PORT || 5000);
 
 app.listen(port, () => {
