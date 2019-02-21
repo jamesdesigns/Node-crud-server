@@ -7,7 +7,7 @@ let ProductSchema = new Schema({
     price: { type: Number, required: true},
     color: { type: String, required: false },
     size: { type: String, required: false },
-    imgUrl: { type: String, rquired: true },
+    // imgUrl: { type: String, rquired: true },
 });
 
 // Export the model
