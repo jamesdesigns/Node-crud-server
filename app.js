@@ -25,7 +25,6 @@ app.use('/products', product);
 
 // let port = 5000;
 // Fix port by adding the following code below
-
 const port = (process.env.PORT || 5000);
 
 app.listen(port, () => {

@@ -25,6 +25,7 @@ exports.product_create = function (req, res) {
             price: req.body.price,
             color: req.body.color,
             size: req.body.size,
+            imgUrl: req.body.imgUrl,
         }
     );
 
