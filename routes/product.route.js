@@ -8,7 +8,7 @@ const product_controller = require('../controllers/product.controller');
 router.get('/test', product_controller.test);
 
 // Define router for all 6 endpoints
-router.get('/:id', product_controller.product_details);
+// router.get('/:id', product_controller.product_details);
 router.get('/', product_controller.all);
 router.get('/name/:name', product_controller.find_name);
 router.get('/size/:size', product_controller.find_size);
