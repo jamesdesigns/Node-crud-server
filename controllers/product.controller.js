@@ -6,10 +6,23 @@ exports.test = function (req, res) {
 };
 
 // View all products
+// exports.all = (req, res) => {
+//     Product.find({})
+//     .then( (allProducts) => res.json(allProducts))
+// }
+
 exports.all = (req, res) => {
-    Product.find({})
-    .then( (allProducts) => res.json(allProducts))
+    Product.find()
+    .then( (allProducts) => res.send(allProducts));
 }
+
+// controllers/products.controller.js
+// exports.product_details = function (req, res) {
+//     Product.findById(req.params.id, function (err, product) {
+//         if (err) return next(err);
+//         res.send(product);
+//     })
+// };
 
 // Find one product
 exports.find_one = (req, res) => {
