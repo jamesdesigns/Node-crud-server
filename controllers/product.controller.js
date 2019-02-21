@@ -24,11 +24,21 @@ exports.all = (req, res) => {
 //     })
 // };
 
+exports.find_name = (req, res, next) => {
+    const productName = req.params.name;
+    Product.find({
+        name: productName
+    })
+    .then(result => {
+        res.send(result)
+    })
+};
+
 // Find one product
-exports.find_one = (req, res) => {
-    Product.findOne({ name: req.params.name })
-    .then( (foundProduct) => res.json(foundProduct))
-}
+// exports.find_one = (req, res) => {
+//     Product.findOne({ name: req.params.name })
+//     .then( (foundProduct) => res.json(foundProduct))
+// }
 
 // Create a product
 exports.product_create = function (req, res) {
