@@ -9,9 +9,13 @@ Deployed to Heroku
 ## Routes
 
 "/" - Get all products in the database
+
 "/name/:name" - Get a product by name
+
 "/size/:size" - Get a product by size
+
 "/create" - Add a new product
+
 
 To submit add a new product in Postman use the following format:
 
@@ -23,4 +27,5 @@ size: product size
 ```
 
 "/:id/update" - Update a specific product
+
 "/:id/delete" - Delete a specific product
