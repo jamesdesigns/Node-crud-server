@@ -1,10 +1,15 @@
 # RESTful CRUD Node Server
 
-## SpaceX Retail Store API 
-A retail store that contains SpaceX clothing products such as Hoodies and T-shirts. 
+## SpaceX Retail Store
+A retail store that sells SpaceX clothing which include Hoodies and T-shirts. 
 
 ## Deployment 
 Deployed to Heroku
+
+## Heroku 
+To view deployment link:
+[Heroku URL] https://guarded-headland-15878.herokuapp.com
+
 
 ## Routes
 
