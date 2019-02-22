@@ -8,7 +8,8 @@ Deployed to Heroku
 
 ## Heroku 
 To view deployment link:
-[https://guarded-headland-15878.herokuapp.com] (Heroku Link)
+
+[Heroku Link](https://guarded-headland-15878.herokuapp.com])
 
 
 ## Routes
