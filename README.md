@@ -19,7 +19,7 @@ Deployed to Heroku. To view deployment link:
 
 * "/create" - Add a new product
 
-## Adding a product
+### Adding a product
 
 To add a new product in Postman use the following format:
 
