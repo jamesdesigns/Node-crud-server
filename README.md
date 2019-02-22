@@ -23,7 +23,7 @@ To view deployment link:
 "/create" - Add a new product
 
 
-To submit add a new product in Postman use the following format:
+To add a new product in Postman use the following format:
 
 ```bash 
 name: product name,
