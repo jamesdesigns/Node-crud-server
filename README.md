@@ -10,9 +10,9 @@ Deployed to Heroku
 
 "/" - Get all products in the database
 
-"/name/:name" - Get a product by name
+"/name/:name" - Get a product by specific name
 
-"/size/:size" - Get a product by size
+"/size/:size" - Get a product by size (XL, Large, Medium, Small)
 
 "/create" - Add a new product
 
