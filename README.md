@@ -11,15 +11,22 @@ Deployed to Heroku. To view deployment link:
 
 ## Routes
 
+### Get All Products
+
 * "/" - Get all products in the database
+
+### Get Product by Name
 
 * "/name/:name" - Get a product by specific name
 
+### Get Product by Size
+
 * "/size/:size" - Get a product by size (XL, Large, Medium, Small)
 
-* "/create" - Add a new product
 
-### Adding a product
+### Create New Product
+
+* "/create" - Add a new product
 
 To add a new product in Postman use the following format:
 
@@ -30,6 +37,10 @@ color: product color,
 size: product size
 ```
 
+### Update Product by id
+
 * "/:id/update" - Update a specific product
+
+### Delete Product by id
 
 * "/:id/delete" - Delete a specific product
