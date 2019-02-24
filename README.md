@@ -1,32 +1,33 @@
 # RESTful CRUD Node Server
 
 ## SpaceX Retail Store
-A retail store that sells SpaceX clothing which include Hoodies and T-shirts. 
+A retail store that sells SpaceX clothing and accessories. 
 
 ## Deployment 
 Deployed to Heroku. To view deployment link:
 
-[Heroku Link](https://guarded-headland-15878.herokuapp.com)
+[https://guarded-headland-15878.herokuapp.com](https://guarded-headland-15878.herokuapp.com)
 
 
 ## Routes
 
 ### Get All Products
 
-* "/" - Get all products in the database
+* "/products/" - Get all products in the database
 
 ### Get Product by Name
 
-* "/name/:name" - Get a product by specific name
+* "/products/name/:name" - Get a product by specific name
 
 ### Get Product by Size
+Entering the following sizes are all case sensitive. 
 
-* "/size/:size" - Get a product by size (XL, Large, Medium, Small)
+* "/products/size/:size" - Get a product by size (XL, Large, Medium, Small)
 
 
 ### Create New Product
 
-* "/create" - Add a new product
+* "/products/create" - Add a new product
 
 To add a new product in Postman use the following format:
 
@@ -39,8 +40,8 @@ size: product size
 
 ### Update Product by id
 
-* "/:id/update" - Update a specific product
+* "/products/:id/update" - Update a product with the specific id
 
 ### Delete Product by id
 
-* "/:id/delete" - Delete a specific product
+* "/products/:id/delete" - Delete a product with the specific id
