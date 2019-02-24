@@ -4,10 +4,7 @@
 A retail store that sells SpaceX clothing. 
 
 ## Deployment 
-Deployed to Heroku. To view deployment link:
-
-[https://guarded-headland-15878.herokuapp.com](https://guarded-headland-15878.herokuapp.com)
-
+Deployed to Heroku.
 
 ## Routes
 
