@@ -8,6 +8,13 @@ const product = require('./routes/product.route');
 // Initialize our express app
 const app = express();
 
+app.use((req,res,next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*')
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE')
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+    next()
+})
+
 // Set up mongoose connection
 const mongoose = require('mongoose');
 let dev_db_url = 'mongodb+srv://jhooperdev:servingtheweb2019!$@product-cluster-iyok6.gcp.mongodb.net/product';
